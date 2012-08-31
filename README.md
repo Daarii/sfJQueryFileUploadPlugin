@@ -40,7 +40,8 @@ Demo:
 
 In your form class
 
-```phpclass DemoForm extends BaseZarForm
+```php
+class DemoForm extends BaseZarForm
 {
     public function configure()
     {
