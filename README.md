@@ -67,15 +67,7 @@ class DemoForm extends BaseZarForm
     {
         $this->setWidget('pictures', new sfWidgetFormJQueryFileUpload());
     }
-
-    public function updateDefaultsFromObject()
-    {
-        parent::updateDefaultsFromObject();
-        if(!$this->isNew()){
-            $this->setDefault('pictures', $this->getObject()->getPictures());
-        }
-    }
-    ...
+}
 ```
 
 If you use Admin Generator with sfTwitterBootstrapPlugin then it looks like:
