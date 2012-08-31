@@ -1,3 +1,23 @@
+## Requirement
+
+``jquery-1.7.min.js``, ``bootstrap.min.js``, ``bootstrap.min.css``
+
+In ``apps/backend/config/view.yml``
+
+```yaml
+default:
+  stylesheets:
+    - bootstrap.css
+    # other css files
+
+  javascripts:
+    - jquery-1.7.min.js
+    - bootstrap.min.js
+    # other js files
+```
+
+
+
 ## How to setup
 
 In ``config/ProjectConfiguration.class.php``
