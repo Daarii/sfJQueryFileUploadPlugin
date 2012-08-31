@@ -59,4 +59,6 @@ In your form class
 
 If you use Admin Generator with sfTwitterBootstrapPlugin then it looks like:
 
-![Preview of list](https://github.com/enkuso/sfJQueryFileUploadPlugin/raw/master/doc/preview.png)
+Preview:
+
+![Preview](https://github.com/enkuso/sfJQueryFileUploadPlugin/raw/master/doc/preview.png)
