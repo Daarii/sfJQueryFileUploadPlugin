@@ -20,14 +20,14 @@ class jQueryFileUploadActions extends sfActions
         $upload_handler = new qzUploadHandler(array(
 
             'script_url' => $this->generateUrl('jquery_file_upload_ajax',array(),true),
-            'upload_dir' => sfConfig::get('sf_upload_dir').'/files/',
-            'upload_url' => $host.'/uploads/files/',
+            'upload_dir' => sfConfig::get('sf_web_dir').'/sfJQueryFileUploadPlugin/uploads/files/',
+            'upload_url' => $host.'/sfJQueryFileUploadPlugin/uploads/files/',
             'image_versions' => array(
                 // define thumbnail settings here
                 /*
                 'large' => array(
-                    'upload_dir' => sfConfig::get('sf_upload_dir').'/large/',
-                    'upload_url' => $host.'/large/400x300/',
+                    'upload_dir' => sfConfig::get('sf_web_dir').'/sfJQueryFileUploadPlugin/uploads/large/',
+                    'upload_url' => $host.'/sfJQueryFileUploadPlugin/large/400x300/',
                     'max_width' => 400,
                     'max_height' => 300,
                     'jpeg_quality' => 95
@@ -35,8 +35,8 @@ class jQueryFileUploadActions extends sfActions
                 */
 
                 'thumbnail' => array(
-                    'upload_dir' => sfConfig::get('sf_upload_dir').'/thumbnails/',
-                    'upload_url' => $host.'/uploads/thumbnails/',
+                    'upload_dir' => sfConfig::get('sf_web_dir').'/sfJQueryFileUploadPlugin/uploads/thumbnails/',
+                    'upload_url' => $host.'/sfJQueryFileUploadPlugin/uploads/thumbnails/',
                     'max_width' => 80,
                     'max_height' => 80
                 )

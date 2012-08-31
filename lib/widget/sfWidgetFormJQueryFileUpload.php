@@ -207,7 +207,6 @@ class sfWidgetFormJQueryFileUpload extends sfWidgetFormInput
                 }
             })
             .bind('fileuploadcompleted', function (e, data) {
-                console.debug(data);
                 $.each(data.result, function(index, value){
                     var curstr = $('#$id').val();
                     if(curstr.indexOf(value.name) < 0)
