@@ -72,7 +72,7 @@ class DemoForm extends BaseZarForm
     {
         parent::updateDefaultsFromObject();
         if(!$this->isNew()){
-            $this->setDefault('pictures', implode(" ",$this->getObject()->getPictures()));
+            $this->setDefault('pictures', $this->getObject()->getPictures());
         }
     }
     ...
