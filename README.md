@@ -61,7 +61,7 @@ Demo:
 In your form class
 
 ```php
-class DemoForm extends BaseZarForm
+class DemoForm extends BaseDemoForm
 {
     public function configure()
     {
